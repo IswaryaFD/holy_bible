@@ -1,0 +1,62 @@
+fastapi
+uvicorn
+python-multipart
+
+
+
+
+# python -m http.server 8011
+
+
+# http://127.0.0.1:8011/index.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# holy_bible_app/
+# ├─ frontend/
+# │ ├─ index.html
+# │ ├─ image_upload.html
+# │ ├─ bible_verse.html
+# │ ├─ dictionary.html
+# │ ├─ qa.html
+# │ ├─ prayer_request.html
+# │ └─ assets/
+# │ ├─ css/
+# │ │ ├─ home.css
+# │ │ ├─ image.css
+# │ │ ├─ bible.css
+# │ │ ├─ dictionary.css
+# │ │ ├─ qa.css
+# │ │ └─ prayer.css
+# │ └─ js/
+# │ ├─ home.js
+# │ ├─ image.js
+# │ ├─ bible.js
+# │ ├─ dictionary.js
+# │ ├─ qa.js
+# │ └─ prayer.js
+# ├─ backend/
+# │ ├─ app/
+# │ │ ├─ __init__.py
+# │ │ ├─ main.py
+# │ │ └─ api_routes.py
+# │ ├─ uploads/ (will contain uploaded files)
+# │ └─ requirements.txt

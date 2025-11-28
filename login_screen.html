@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HolyBible — Login List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- GLOBAL LAYOUT for ALL pages -->
+    <link rel="stylesheet" href="assets/css/home.css">
+
+    <!-- Page-specific styling -->
+    <link rel="stylesheet" href="assets/css/login_screen.css">
+
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- FULL SIDEBAR (same on ALL pages) -->
+    <aside class="sidebar">
+        <div class="brand">
+          <i data-feather="book-open"></i>
+          <span>HolyBible</span>
+        </div>
+
+        <nav class="nav">
+
+          <a href="index.html" class="nav-link">
+            <i data-feather="home"></i><span>Home</span>
+          </a>
+
+          <a href="image_upload.html" class="nav-link">
+            <i data-feather="upload"></i><span>Image Upload</span>
+          </a>
+
+          <a href="bible_verse.html" class="nav-link">
+            <i data-feather="bookmark"></i><span>Bible Verse</span>
+          </a>
+
+          <a href="dictionary.html" class="nav-link">
+            <i data-feather="book"></i><span>Dictionary</span>
+          </a>
+
+          <a href="qa.html" class="nav-link">
+            <i data-feather="help-circle"></i><span>Q & A</span>
+          </a>
+
+          <a href="prayer_request.html" class="nav-link">
+            <i data-feather="heart"></i><span>Prayer Request</span>
+          </a>
+
+          <!-- ACTIVE PAGE -->
+          <a href="login_screen.html" class="nav-link active">
+            <i data-feather="users"></i><span>Login Screen</span>
+          </a>
+
+        </nav>
+    </aside>
+
+
+
+    <!-- MAIN AREA -->
+    <main class="main">
+
+        <!-- TOPBAR (same as all pages) -->
+        <header class="topbar">
+            <div class="title">
+                <i data-feather="users"></i>
+                <span>Login Accounts</span>
+            </div>
+        </header>
+
+        <!-- CONTENT -->
+        <section class="content">
+
+            <div class="card">
+
+                <div class="header-row">
+    <div class="header-left">
+        <h2 class="card-title">Login User List</h2>
+        <p class="muted small">Fetched directly from API.</p>
+    </div>
+
+    
+</div>
+
+
+                <div id="listContainer" class="list-container"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="assets/js/login_screen.js"></script>
+<script>feather.replace();</script>
+
+</body>
+</html>

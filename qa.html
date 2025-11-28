@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HolyBible — Q & A</title>
+
+  <link rel="stylesheet" href="assets/css/qa.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand">
+      <i data-feather="book-open"></i>
+      <span>HolyBible</span>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-link"><i data-feather="home"></i><span>Home</span></a>
+      <a href="image_upload.html" class="nav-link"><i data-feather="upload"></i><span>Image Upload</span></a>
+      <a href="bible_verse.html" class="nav-link"><i data-feather="bookmark"></i><span>Bible Verse</span></a>
+      <a href="dictionary.html" class="nav-link"><i data-feather="book"></i><span>Dictionary</span></a>
+      <a href="qa.html" class="nav-link active"><i data-feather="help-circle"></i><span>Q &amp; A</span></a>
+      <a href="prayer_request.html" class="nav-link"><i data-feather="heart"></i><span>Prayer Request</span></a>
+      <a href="login_screen.html" class="nav-link">
+            <i data-feather="users"></i><span>Login Screen</span>
+          </a>
+    </nav>
+  </aside>
+
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <header class="topbar">
+      <div class="title">
+        <i data-feather="help-circle"></i>
+        <span>Q &amp; A</span>
+      </div>
+    </header>
+
+    <section class="content">
+
+      <div class="card">
+
+        <h2 class="card-title">Add Question & Answer</h2>
+        <p class="muted small">Write a Bible-related question and its answer below.</p>
+
+        <!-- FORM -->
+        <div class="form">
+
+          <div class="form-row">
+
+            <div class="form-control">
+              <textarea id="qInput" placeholder=" "></textarea>
+              <label for="qInput">Question</label>
+            </div>
+
+            <div class="form-control">
+              <textarea id="aInput" placeholder=" "></textarea>
+              <label for="aInput">Answer</label>
+            </div>
+
+          </div>
+
+          <button id="addQA" class="btn-primary">Add Entry</button>
+
+        </div>
+
+
+        <!-- Q&A LIST -->
+        <div id="qaList" class="qa-list">
+          <!-- JS dynamically inserts items here -->
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<script src="assets/js/qa.js"></script>
+<script>feather.replace();</script>
+
+</body>
+</html>
